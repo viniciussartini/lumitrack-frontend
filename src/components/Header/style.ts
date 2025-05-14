@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const BackgroundContainer = styled.div`
@@ -15,7 +16,7 @@ export const HeaderContainer = styled.div`
     margin: 0 auto;
 `;
 
-export const ContentContainer = styled.div`
+export const ContentContainer = styled.nav`
     display: flex;
     align-items: center;
     gap: 25%;
@@ -35,7 +36,7 @@ export const Title = styled.h1`
     }
 `;
 
-export const Link = styled.a`
+export const HeaderLinks = styled(Link)`
     font-size: 1.25rem;
     color: white;
     text-decoration: none;
@@ -44,10 +45,10 @@ export const Link = styled.a`
         text-decoration: underline;
     }
 
-    &.button{
+    &.login-link{
         color: #000000;
         background-color: #FFC736;
-        padding: 1rem;
-        border-radius: 2rem;
+        padding: 0.625rem;
+        border-radius: 1.25rem;
     }
 `;

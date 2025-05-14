@@ -1,4 +1,4 @@
-import { HeaderContainer, BackgroundContainer, ContentContainer, Title, Logo, Link } from "./style";
+import { HeaderContainer, BackgroundContainer, ContentContainer, Title, Logo, HeaderLinks } from "./style";
 
 const Header: React.FC = () => {
     return(
@@ -9,9 +9,9 @@ const Header: React.FC = () => {
                     <Title>Lumi<span>Track</span></Title>
                 </ContentContainer>
                 <ContentContainer>
-                    <Link href="#">Home</Link>
-                    <Link href="#">Sobre</Link>
-                    <Link href="#" className="button">Login</Link>
+                    <HeaderLinks to="/">Home</HeaderLinks>
+                    <HeaderLinks to="/about">Sobre</HeaderLinks>
+                    <HeaderLinks to="/login" className="login-link">Login</HeaderLinks>
                 </ContentContainer>
             </HeaderContainer>
         </BackgroundContainer>
