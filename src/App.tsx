@@ -8,7 +8,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
-import { LayoutContainer, MainWrapper } from "./styles/globalstyle";
+import { LayoutContainer, MainWrapper } from "./styles/componentsStyle";
 
 const App: React.FC = () => {
 
