@@ -1,5 +1,29 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+
+import { Link } from "react-router-dom";
+
+import { colors } from "../../styles/colors";
+
+export const ContentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    .content-wrapper {
+        display: flex;
+        position: relative;
+
+        .text-wrapper {
+            z-index: 2;
+        }
+        
+        img {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            display: block;
+        }
+    }
+`;
 
 export const Title = styled.h1`
     width: 75%;
@@ -8,20 +32,18 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
-    width: 65%;
+    width: 55%;
     font-size: 2rem;
     margin-bottom: 50px;
 `;
 
 export const RegisterLink = styled(Link)`
-    color: #000000;
+    padding: 1rem;
+    font-weight: bold;
+    color: ${colors.black};
     font-size: 2rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    background-color: #FFC736;
-    padding: 1rem;
-
-    &:hover {
-        text-decoration: underline;
-    }
+    background: ${colors.buttonGradient};
 `;
+

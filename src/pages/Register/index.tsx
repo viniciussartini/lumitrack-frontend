@@ -1,4 +1,6 @@
-import { ContentContainer, PageContainer } from "../../styles/globalstyle";
+import { PageContainer } from "../../styles/componentsStyle";
+
+import { ContentContainer } from "./style";
 
 const Register: React.FC = () => {
     return(

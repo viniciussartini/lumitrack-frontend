@@ -1,4 +1,6 @@
-import { BackgroundContainer, Content, FooterContainer, Logo } from "./style"
+import { PageContainer } from "../../styles/componentsStyle";
+
+import { FooterBackgroundContainer, Content, FooterContainer, Logo } from "./style"
 
 const Footer: React.FC = () => {
 
@@ -9,12 +11,14 @@ const Footer: React.FC = () => {
     }
 
     return(
-        <BackgroundContainer>
-            <FooterContainer>
-                <Content>© {getCurrentYear()} Todos os direitos reservados.</Content>
-                <Logo href="#"><img src="/logogithub.svg" alt="Logo Github" /></Logo>
-            </FooterContainer>
-        </BackgroundContainer>
+        <FooterBackgroundContainer>
+            <PageContainer>
+                <FooterContainer>
+                    <Content>© {getCurrentYear()} Todos os direitos reservados.</Content>
+                    <Logo href="https://github.com/viniciussartini/lumitrack-frontend"><img src="/logogithub.svg" alt="Logo Github" /></Logo>
+                </FooterContainer>
+            </PageContainer>
+        </FooterBackgroundContainer>
     );
 }
 
