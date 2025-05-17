@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -10,22 +10,31 @@ import Register from "./pages/Register";
 
 import { LayoutContainer, MainWrapper } from "./styles/componentsStyle";
 
-const App: React.FC = () => {
+const AppContent: React.FC = () => {
+
+  const location = useLocation();
+  const hideHeaderFooter = location.pathname === "/login" || location.pathname === "/register";
 
   return(
+  <LayoutContainer>
+    {!hideHeaderFooter && <Header/>}
+    <MainWrapper>
+      <Routes>
+        <Route path="/" element={<LandingPage />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/login" element={<Login />}/>
+        <Route path="/register" element={<Register />}/>
+      </Routes>
+    </MainWrapper>
+    {!hideHeaderFooter && <Footer/>}
+  </LayoutContainer>
+  );
+};
+
+const App: React.FC = () => {
+  return(
     <Router>
-      <LayoutContainer>
-        <Header/>
-        <MainWrapper>
-          <Routes>
-            <Route path="/" element={<LandingPage />}/>
-            <Route path="/about" element={<About />}/>
-            <Route path="/login" element={<Login />}/>
-            <Route path="/register" element={<Register />}/>
-          </Routes>
-        </MainWrapper>
-        <Footer/>
-      </LayoutContainer>
+      <AppContent />
     </Router>
   );
 }
