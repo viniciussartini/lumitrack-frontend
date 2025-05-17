@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 
 import { LayoutContainer, MainWrapper } from "./styles/componentsStyle";
+import OnBoarding from "./pages/OnBoarding";
 
 const AppContent: React.FC = () => {
 
@@ -24,6 +25,7 @@ const AppContent: React.FC = () => {
         <Route path="/about" element={<About />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/register" element={<Register />}/>
+        <Route path="/onboarding" element={<OnBoarding />}/>
       </Routes>
     </MainWrapper>
     {!hideHeaderFooter && <Footer/>}
