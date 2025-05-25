@@ -5,12 +5,32 @@ import { colors } from "../../styles/colors";
 export const ContentContainer = styled.div`
 
     display: flex;
-    align-items: center;
-    gap: 2%;
+    flex-direction: column;
     max-height: max-content;
     padding: 1rem;
     border-radius: 8px;
     background: ${colors.backgroundCard};
+
+    .delete-button-wrapper {
+
+        display: flex;
+        justify-content: end;
+
+        .delete-button {
+            max-width: 15px;
+            border-style: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+
+    a {
+        display: flex;
+        gap: 2%;
+        text-decoration: none;
+        color: ${colors.black};
+    }
 
     & > img {
         display: block;
@@ -37,13 +57,6 @@ export const ContentContainer = styled.div`
                 h4 {
                     font-size: 0.75rem;
                     color: ${colors.grayMedium};
-                }
-
-                button {
-                    font-weight: bold;
-                    color: ${colors.background};
-                    padding: 1rem;
-                    background-color: ${colors.black};
                 }
             }
         }
