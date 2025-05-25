@@ -1,16 +1,17 @@
-import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
-import LandingPage from "./pages/Landing";
-import About from "./pages/About";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import LandingPage from "./pages/Landing/Home";
+import About from "./pages/About/About";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
 
 import { LayoutContainer, MainWrapper } from "./styles/componentsStyle";
-import OnBoarding from "./pages/OnBoarding";
-import Buildings from "./pages/Buildings";
+import OnBoarding from "./pages/OnBoarding/OnBoarding";
+import Buildings from "./pages/Buildings/Buildings";
+import Details from "./pages/Buildings/Details/Details";
 
 const AppContent: React.FC = () => {
 
@@ -28,6 +29,7 @@ const AppContent: React.FC = () => {
         <Route path="/register" element={<Register />}/>
         <Route path="/onboarding" element={<OnBoarding />}/>
         <Route path="/buildings" element={<Buildings />}/>
+        <Route path="/buildings/:id/details" element={<Details />}/>
       </Routes>
     </MainWrapper>
     {!hideHeaderFooter && <Footer/>}
@@ -37,9 +39,9 @@ const AppContent: React.FC = () => {
 
 const App: React.FC = () => {
   return(
-    <Router>
+    <BrowserRouter>
       <AppContent />
-    </Router>
+    </BrowserRouter>
   );
 }
 
