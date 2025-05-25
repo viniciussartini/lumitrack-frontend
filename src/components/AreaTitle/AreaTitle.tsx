@@ -19,7 +19,7 @@ const routeConfig = [
         alt: "Botão cadastrar edificação."
     },
     {
-        path: "/buildings/:id/details",
+        path: "/buildings/details",
         title: "Editar",
         icon: "/EditIcon.svg",
         alt: "Botão de editar edificação"

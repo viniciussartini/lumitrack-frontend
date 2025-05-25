@@ -29,4 +29,12 @@ export const ContentContainer = styled.div`
             }
         }
     }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 8.98%;
+        margin-bottom: 50px;
+    }
 `;

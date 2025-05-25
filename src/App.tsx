@@ -29,7 +29,7 @@ const AppContent: React.FC = () => {
         <Route path="/register" element={<Register />}/>
         <Route path="/onboarding" element={<OnBoarding />}/>
         <Route path="/buildings" element={<Buildings />}/>
-        <Route path="/buildings/:id/details" element={<Details />}/>
+        <Route path="/buildings/details" element={<Details />}/>
       </Routes>
     </MainWrapper>
     {!hideHeaderFooter && <Footer/>}

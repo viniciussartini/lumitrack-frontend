@@ -9,7 +9,7 @@ const BuildingCard: React.FC = () => {
                     <img src="./DeleteIcon.svg" alt="Botão excluir edificação" />
                 </button>
             </div>
-            <Link to={"/buildings/:id/details"}>
+            <Link to={"/buildings/details"}>
                 <img src="ImageIcon.svg" alt="Imagem da Edificação" />
                 <div className="card-wrapper">
                         <h3>Nome da edificação</h3>

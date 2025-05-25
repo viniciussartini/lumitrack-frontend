@@ -15,7 +15,12 @@ const RegisteredArea: React.FC<Props> = () => {
                     <img src="/AddAreaIcon.svg" alt="Botão de adicionar nova área" />
                 </button>
             </div>
-            <div>
+            <div className="cards-container">
+                <AreaCard/>
+                <AreaCard/>
+                <AreaCard/>
+                <AreaCard/>
+                <AreaCard/>
                 <AreaCard/>
             </div>
         </ContentContainer>
