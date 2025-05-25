@@ -8,11 +8,11 @@ const Register: React.FC = () => {
         <PageContainer>
             <ContentContainer>
                 <div className="logo-wrapper">
-                    <img src="logolumitrack.svg" alt="Logo LumiTrack" />
+                    <img src="LogoLumitrack.svg" alt="Logo LumiTrack" />
                     <h1>Lumi<span>Track</span></h1>
                 </div>
                 <div className="form-wrapper">
-                    <img src="landingimage.svg" alt="" />
+                    <img src="LandingImage.svg" alt="" />
                     <form>
                         <h2>Cadastrar</h2>
                         <input type="text" name="name" placeholder="Nome"/>

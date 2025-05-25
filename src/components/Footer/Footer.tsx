@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             <PageContainer>
                 <FooterContainer>
                     <Content>© {getCurrentYear()} Todos os direitos reservados.</Content>
-                    <Logo href="https://github.com/viniciussartini/lumitrack-frontend"><img src="/logogithub.svg" alt="Logo Github" /></Logo>
+                    <Logo href="https://github.com/viniciussartini/lumitrack-frontend"><img src="/LogoGithub.svg" alt="Logo Github" /></Logo>
                 </FooterContainer>
             </PageContainer>
         </FooterBackgroundContainer>

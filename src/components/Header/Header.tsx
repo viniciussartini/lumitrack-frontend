@@ -8,7 +8,7 @@ const Header: React.FC = () => {
             <PageContainer>
                 <HeaderContainer>
                     <ContentContainer>
-                        <Logo src="/logolumitrack.svg" alt="Logo"/>
+                        <Logo src="/LogoLumitrack.svg" alt="Logo"/>
                         <Title>Lumi<span>Track</span></Title>
                     </ContentContainer>
                     <ContentContainer>
