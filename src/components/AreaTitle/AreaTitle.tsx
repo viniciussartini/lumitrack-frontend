@@ -24,6 +24,12 @@ const routeConfig = [
         icon: "/EditIcon.svg",
         alt: "Botão de editar edificação"
     },
+    {
+        path: "/area",
+        title: "Editar",
+        icon: "/EditIcon.svg",
+        alt: "Botão de editar edificação"
+    },
 ]
 
 const AreaTitle: React.FC<Props> = ({ title }) => {

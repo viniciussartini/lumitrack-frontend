@@ -7,11 +7,12 @@ import LandingPage from "./pages/Landing/Home";
 import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-
-import { LayoutContainer, MainWrapper } from "./styles/componentsStyle";
 import OnBoarding from "./pages/OnBoarding/OnBoarding";
 import Buildings from "./pages/Buildings/Buildings";
 import Details from "./pages/Buildings/Details/Details";
+import Area from "./pages/Area/Area";
+
+import { LayoutContainer, MainWrapper } from "./styles/componentsStyle";
 
 const AppContent: React.FC = () => {
 
@@ -30,6 +31,7 @@ const AppContent: React.FC = () => {
         <Route path="/onboarding" element={<OnBoarding />}/>
         <Route path="/buildings" element={<Buildings />}/>
         <Route path="/buildings/details" element={<Details />}/>
+        <Route path="/area" element={<Area />}/>
       </Routes>
     </MainWrapper>
     {!hideHeaderFooter && <Footer/>}
